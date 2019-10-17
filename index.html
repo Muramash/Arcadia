@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Arcadia Arcadian Tales">
+    <meta name="author" content="Broquet Alexandre">
+
+    <title>Arcadia</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+ 
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- audio -->
+                    <audio
+                        autoplay loop id="player"
+                        src="./audio/Lyrvis_-_Dawn_of_Arcadia.mp3">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                    </audio>
+            
+
+<!-- particles.js container --> 
+
+ 
+    <!-- Masthead -->
+    <div id="core">
+    <div id="clouds">
+      </div>
+        <div class="marquee">
+            <p><img src="./img/music.png" width="15"/> Lyrvis - Dawn of Arcadia</p>
+          </div>
+            
+                <div class="row">
+                    <div class="banner-text">
+                        <h1 id="title-lens">Arcadian</h1>
+                        <h2 id="subtitle">Tales</h2>
+                        <br/>
+                        <p><a class="butcon" href='#' onclick='newgame()'>Nouvelle partie</a></p>
+                        <p><a class="butcon" href='#'   aria-haspopup="dialog"
+                          aria-controls="dialog">Charger une partie</a></p>
+                        <p><a class="butcon" href='#'>Options</a></p>
+                    </div>
+                </div>
+              </div>
+              
+            
+
+            <div id="overlay"></div>
+            <div class="js-page">
+                <main class="js-document">
+                </main>
+                <div id="dialog" role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc" aria-modal="true" aria-hidden="true" tabindex="-1" class="c-dialog">
+                  <div role="document" class="c-dialog__box">
+                    <button type="button" aria-label="Fermer" title="Fermer cette fenêtre modale" data-dismiss="dialog" class="btn--close">X</button>
+                    <h3 id="dialog-title">Charger une partie</h3>
+                    <a href="./game/game.html" class="slot" id="dialog-desc">> Slot 1</a>
+                    <p id="pseudo1"></p><p id="location1"></p><p id="level1"></p>
+                    <hr/>
+                    <a href="./game/game.html" class="slot" id="dialog-desc">> Slot 2</a>
+                    <p id="pseudo2"></p><p id="location2"></p><p id="level2"></p>
+                    <hr/>
+                    <a href="./game/game.html" class="slot" id="dialog-desc">> Slot 3</a>
+                    <p id="pseudo3"></p><p id="location3"></p><p id="level3"></p>
+
+                  </div>
+                </div>
+              </div>     
+
+              <div id="whole">
+                  <div id="container">
+
+                      <a href="./creation/index.html" class="indexed" id="passer">Touche entrée pour passer</a>
+                      
+                      <canvas id="pixie"></canvas>
+                    
+                      <div class="indexed" id="textmatter">
+                          <div class="titleCont">
+                              <h1 class="main-title" id="main-title">
+                                  <p class="textanim"></p>
+                              </h1>
+                          </div>
+                        </div>
+                    
+                </div>
+              </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="./script/modal.js"></script>
+    <script src="./script/newgame.js"></script>
+    <script src="./script/request.js"></script>
+    <script  src="./script/snow.js"></script>
+    <script src="three.r92.min.js"></script> <script src="vanta.clouds.min.js"></script> <script> VANTA.CLOUDS({ el: "#clouds", skyColor: 0x589bb6, cloudColor: 0x7f8c9f, sunGlareColor: 0xe03b04, sunlightColor: 0xd97a1c }) </script>
+  </body>
+
+</html>

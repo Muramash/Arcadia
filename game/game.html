@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Arcadia</title>
+  
+  
+  <link href="./../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+ <!-- <audio autoplay src="./audio/Kingdom Hearts - Dive into the Heart EXTENDED (192  kbps).mp3" > -->
+
+</audio>
+  <!-- Map modale -->
+
+    <div id="overlay">  </div>
+    <div class="js-page">
+        <main class="js-document">
+        </main>
+        <div id="dialog" role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc" aria-modal="true" aria-hidden="true" tabindex="-1" class="c-dialog">
+          <div role="document" class="c-dialog__box">
+            
+
+          </div>
+        </div>
+      </div>
+      <!-- Map modale -->
+      <!-- Credits modale -->
+<!-- Credits modale -->
+ <div class="container-fluid">
+   
+  
+<div class="row">
+  <div class="col">
+          <h3 class="masthead-brand">Arcadian Tales</h3>
+      </div>
+ 
+
+  <div class="col">
+      <nav>
+          <ul class="nav masthead-nav">
+            <li class="active"><a href="#">Jeu</a></li>
+            <li><a href="#" aria-haspopup="dialog"
+              aria-controls="dialog" onclick='getPerso()'>Personnage</a></li>
+            <li><a href="#" aria-haspopup="dialog"
+              aria-controls="dialog" onclick='getMap()'><img class="icon" src="./css/img/map.png"></img></a></li>
+              <li><a href="#" aria-haspopup="dialog"
+                aria-controls="dialog" onclick='getCredit()'><img class="icon" src="./css/img/credits.png"></img></a></li>
+          </ul>
+      </nav>
+  </div>
+</div>
+
+    <div class="row">
+        <div class="col-sm-12 site-wrapper">
+          <div class="row">
+            <div class="col-5 col-sm-6">
+                <div class="map">
+                    </div>
+            </div>
+            <div class="col-7 col-sm-6">
+                <div class="location">
+                    <h3 id="pseudo" class="libelLocation"></h3>
+                    <h3 id="location" class="libelLocation"></h3>
+                    <h4 id="underlocation" class="libelLocation"></h4>
+                  </div>
+                  <div class="joueurico">
+                  </div>
+            </div>
+          </div>
+<div class="row">
+  <div class="col-5">
+    <br/>
+      <div id="lefond">
+<div id="limage"></div>
+      </div>
+  </div>
+  <div class="col-7">
+      <div class="inner cover">
+          <div id="textcontainer">
+            <div id="text_content" class="overflow-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada, tellus nec commodo pulvinar, sapien turpis convallis tortor, a sodales lorem lacus eget tortor.
+                Cras maximus, enim in finibus elementum, nisl nibh tempor libero, a ultricies orci arcu id massa. Vestibulum ullamcorper nulla id tellus congue, vel venenatis lorem eleifend.
+                Cras maximus, enim in finibus elementum, nisl nibh tempor libero, a ultricies orci arcu id massa. Vestibulum ullamcorper nulla id tellus congue, vel venenatis lorem eleifend. Maecenas ligula lorem, elementum sit amet ultricies quis, condimentum vel mauris. Donec non volutpat nunc. Duis ac nulla velit. Nam sed gravida sem. Aenean accumsan elit id neque feugiat sodales. In urna sem, interdum et scelerisque in, elementum vitae turpis. Aliquam lacus mauris, blandit ut tristique at, rutrum in nisi. Quisque volutpat vestibulum magna a finibus. In pellentesque mi vel massa pulvinar, id porttitor leo aliquet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada, tellus nec commodo pulvinar, sapien turpis convallis tortor, a sodales lorem lacus eget tortor.
+                Cras maximus, enim in finibus elementum, nisl nibh tempor libero, a ultricies orci arcu id massa. Vestibulum ullamcorper nulla id tellus congue, vel venenatis lorem eleifend.
+                Cras maximus, enim in finibus elementum, nisl nibh tempor libero, a ultricies orci arcu id massa. Vestibulum ullamcorper nulla id tellus congue, vel venenatis lorem eleifend. Maecenas ligula lorem, elementum sit amet ultricies quis, condimentum vel mauris. Donec non volutpat nunc. Duis ac nulla velit. Nam sed gravida sem. Aenean accumsan elit id neque feugiat sodales. In urna sem, interdum et scelerisque in, elementum vitae turpis. Aliquam lacus mauris, blandit ut tristique at, rutrum in nisi. Quisque volutpat vestibulum magna a finibus. In pellentesque mi vel massa pulvinar, id porttitor leo aliquet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada, tellus nec commodo pulvinar, sapien turpis convallis tortor, a sodales lorem lacus eget tortor.
+                Cras maximus, enim in finibus elementum, nisl nibh tempor libero, a ultricies orci arcu id massa. Vestibulum ullamcorper nulla id tellus congue, vel venenatis lorem eleifend.
+                Cras maximus, enim in finibus elementum, nisl nibh tempor libero, a ultricies orci arcu id massa. Vestibulum ullamcorper nulla id tellus congue, vel venenatis lorem eleifend. Maecenas ligula lorem, elementum sit amet ultricies quis, condimentum vel mauris. Donec non volutpat nunc. Duis ac nulla velit. Nam sed gravida sem. Aenean accumsan elit id neque feugiat sodales. In urna sem, interdum et scelerisque in, elementum vitae turpis. Aliquam lacus mauris, blandit ut tristique at, rutrum in nisi. Quisque volutpat vestibulum magna a finibus. In pellentesque mi vel massa pulvinar, id porttitor leo aliquet.
+            </div>
+  </div>
+    </div>
+</div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="buttonscontainer">
+                    <a id="button1" class="buttons colorized" href="#">Futurs boutons</a>
+                    <a id="button2" class="buttons colorized" href="#">Futurs boutons</a>
+                    <a id="button3" class="buttons colorized" href="#">Futurs boutons</a>
+                    <a id="button4" class="buttons colorized" href="#">Futurs boutons</a>
+                    <a id="button5" class="buttons colorized" href="#">Futurs boutons</a>
+                    <a id="button6" class="buttons colorized" href="#">Futurs boutons</a>
+                    <a id="button7" class="buttons colorized" href="#">Futurs boutons</a>
+                    <a id="button8" class="buttons colorized" href="#">Futurs boutons</a>
+          </div>
+        </div>
+      </div>
+ </div>
+ </div>
+  <!-- Conteneur principal -->
+
+</body>
+<script type="text/javascript" src="./../script/modal.js"></script>
+<script src="./../vendor/jquery/jquery.js"></script>
+<script src="./script/request.js"></script>
+<script>
+  function getMap(){
+    $(".c-dialog__box").empty();
+        $(".c-dialog__box").append("<p><button type='button' aria-label='Fermer' title='Fermer cette fenêtre modale' data-dismiss='dialog' class='btn--close colorized'>X</button></p>"+
+        "<img src='./css/img/carte.jpg'></img>");
+  }
+  function getPerso(){
+    $(".c-dialog__box").empty();
+    $(".c-dialog__box").append("<p><button type='button' aria-label='Fermer' title='Fermer cette fenêtre modale' data-dismiss='dialog' class='btn--close colorized'>X</button></p>"+
+        "<h2>Le personnage</h2>");
+  }
+  function getCredit(){
+    $(".c-dialog__box").empty();
+    $(".c-dialog__box").append("<p><button type='button' aria-label='Fermer' title='Fermer cette fenêtre modale' data-dismiss='dialog' class='btn--close colorized'>X</button></p>"+
+        "<h2>Les crédits</h2>"+
+        "Chef de projet : Broquet Alexandre<br/>"+
+        "Interface graphique : Broquet Alexandre<br/>"+
+        "Composition musicales : Jérémy Hoareau<br/>"+
+        "Databases scripting : Broquet Alexandre, Vicente Jean<br/>"+
+        "Composition musicales : Jérémy Hoareau<br/>"+
+        "Story scripting : Broquet Alexandre, Motais de Narbonne Guillaume<br/>"+
+        "");
+  }
+  </script>
+</html>
